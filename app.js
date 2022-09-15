@@ -152,6 +152,17 @@ app.get("/:customeName", function(req, res){
 })
 
 
-app.listen(2000, function(){
-  console.log("Server started running on Port 2000");
+
+app.listen(process.env.PORT);
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 2000;
+}
+
+
+
+
+app.listen(port, function(){
+  console.log("Server started Successfully");
 });
