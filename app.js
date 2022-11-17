@@ -13,7 +13,7 @@ app.use(express.static("public"));
 
 // mongoose connection established
 
-mongoose.connect("mongodb+srv://admin-sanket:Shrey%4024@cluster0.42mrd8a.mongodb.net/todolistData", {useNewUrlParser: true});
+mongoose.connect("mongodb.net/todolistData", {useNewUrlParser: true});
 
 
 // Today(route page) Page schema  created
